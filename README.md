@@ -20,9 +20,9 @@ The data sources are as highlighted below:
 
 After importing and cleaning the data, i checked for normal distribution 
 within the data: I used a histogram to show the distribution of gross_profit
-
+![images/Capture.PNG]
 Performed a IQR test after noticing the data was highly skewed and had high kurtosis
-
+![images/PMF_Genre.PNG]
 The data is somewhat normalised but not enough to do any normal ttests. Due to this well be using the following tests on our Hypotheses;
 
 ..* Spearman's Rank Correlation
