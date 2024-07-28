@@ -4,7 +4,8 @@ This is a project to assess the success of various films based on genres, direct
 ## Data And Buisness Understanding
 Karasha Films ants to start a original content film buisness and has tasked us in checking the data from three websites to determine which types films are most successful.
 'Types' refer to genre however we will also recommend possibe directors and release dates if they deem relevant to profitability and success.
-### Approach To Data Handling
+
+### Data Handling And Analysis
 1. Import data
 2. Explore data
 3. Clean Data
@@ -20,10 +21,16 @@ The data sources are as highlighted below:
 
 After importing and cleaning the data, i checked for normal distribution 
 within the data: I used a histogram to show the distribution of gross_profit
+
 ![PNG](images/Capture.PNG)
+
 Performed a IQR test after noticing the data was highly skewed and had high kurtosis
+
 ![PNG2](images/PMF_Genre.PNG)
+
 The data is somewhat normalised but not enough to do any normal ttests. Due to this well be using the following tests on our Hypotheses;
+
+![PNG](images/BudgetVsProfit)
 
 * Spearman's Rank Correlation
 * Kruskal-Wallis H test
@@ -49,3 +56,15 @@ From this dataset and Hypothesis tests we can suggest the studio create films wh
 3. Use thier part of thier production budget to influence the rating of the film before release to get a rating of 7.5 and above.
 
 I believe these recommendations will be the best first step in creating a successful film buisness based on the data provided.
+
+##Repository Contents
+
+├── README.md                 <- README for reviewers of this project
+├── genre_film.ipynb          <- Narrative documentation of analysis in Jupyter notebook
+├── Film Industry Analysis.pdf<- PDF version of project 
+├── movie_data_erd.jpeg       <- Image sourced externally
+├── images                    <- visualisations generated from code
+├── .gitignore                <- handles the large imdb database
+├── bom.movie_gross.csv.gz    <- the box office mojo data
+├── tn.movie_budgets.csv.gz   <- The Numbers Data
+
